@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fundo.jpg');
+    /** define o tamanho da imagem lxa 100%vh **/
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.menu {
+    background-color: white;
+}
+
+.menu ul {
+     /** Força o componente ser coluna **/
+    display: flex;
+     /** Ajusta o conteúdo **/
+    justify-content: space-around;
+}
+
+.menu li {
+     /** Desativar o marcador da lista **/
+    list-style: none;
+}
+
+a {
+    color: teal;
+    /** Tirar o sublinhado das tags a **/
+    text-decoration: none;
+}
+ /** Ativa o sublinhado das tags a Pseudo classe**/
+a:hover {
+    text-decoration: underline;
+}
+
+.site-subtitle, 
+.site-title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
