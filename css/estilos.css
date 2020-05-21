@@ -10,30 +10,59 @@ body {
     background-size: auto 100vh;
     font-family: Arial;
     height: 100vh;
+    font-size: 12px;
+}
+/*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media(min-width:400px) {
+  body {
+      font-size: 14px;
+  }
+
+  @media(min-width:600px) {
+    body {
+        font-size: 18px;
+    }
+
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    /* Só funciona com o flex */
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     background-color: white;
+    position: fixed;
+    top:0 ;
+    width: 100vw;
 }
 
 .menu ul {
-     /** Força o componente ser coluna **/
+     /* Força o componente ser coluna */
     display: flex;
      /** Ajusta o conteúdo **/
     justify-content: space-around;
 }
 
 .menu li {
-     /** Desativar o marcador da lista **/
+     /* Desativar o marcador da lista */
     list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px, 20px;
 }
 
 a {
     color: teal;
-    /** Tirar o sublinhado das tags a **/
+    /* Tirar o sublinhado das tags a */
     text-decoration: none;
 }
- /** Ativa o sublinhado das tags a Pseudo classe**/
+ /* Ativa o sublinhado das tags a Pseudo classe */
 a:hover {
     text-decoration: underline;
 }
@@ -44,6 +73,15 @@ a:hover {
     text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: italic;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 180px
 }
